@@ -30,7 +30,7 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold text-emerald-600 mb-10 lg:mb-6"
+            className="text-4xl md:text-6xl font-bold text-emerald-600 mb-10 lg:mb-6 min-h-[96px] md:min-h-[128px]"
           >
             {titles[index]}
           </motion.h1>
