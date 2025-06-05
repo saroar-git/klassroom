@@ -35,7 +35,7 @@ const Login = () => {
       <div
         className={clsx(
           "perspective w-full max-w-md relative",
-          isLogin ? "h-[380px]" : "h-[820px] md:h-[540px]"
+          isLogin ? "h-[400px] lg:h-[380px]" : "h-[820px] md:h-[540px]"
         )}
       >
         <motion.div
