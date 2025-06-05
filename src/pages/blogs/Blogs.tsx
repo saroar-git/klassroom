@@ -52,7 +52,7 @@ const Blogs = () => {
     <Container className="my-16 px-3">
       <div className="text-center">
         <motion.h1
-          className="text-4xl font-bold text-green-700 poppins inline-block"
+          className="text-4xl font-bold text-emerald-700 poppins inline-block"
           variants={typingContainer}
           initial="hidden"
           animate="visible"
@@ -65,7 +65,7 @@ const Blogs = () => {
         </motion.h1>
 
         <motion.div
-          className="h-1 bg-green-600 rounded-full mt-2 mx-auto"
+          className="h-1 bg-emerald-600 rounded-full mt-2 mx-auto"
           style={{ maxWidth: "200px" }}
           variants={underlineAnimation}
           initial="hidden"

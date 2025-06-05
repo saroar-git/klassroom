@@ -21,7 +21,7 @@
   }
 
   .btn-secondary {
-    @apply bg-green-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-green-400 transition;
+    @apply bg-emerald-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-emerald-400 transition;
   }
 
   .btn-accent {

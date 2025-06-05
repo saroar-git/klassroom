@@ -41,7 +41,7 @@ const SPSS = () => {
             </Link>
           </li>
           <li>
-            <Link to="/blogs" className="hover:text-green-700 font-medium">
+            <Link to="/blogs" className="hover:text-emerald-700 font-medium">
               Blogs
             </Link>
           </li>
