@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-white via-emerald-50 to-emerald-100 text-center px-4">
+    <section className="lg:min-h-[85vh] min-h-[55vh] flex items-center justify-center bg-gradient-to-br from-white via-emerald-50 to-emerald-100 text-center px-4">
       <div className="max-w-3xl">
         <AnimatePresence mode="wait">
           <motion.h1
@@ -30,7 +30,7 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold text-emerald-600 mb-6"
+            className="text-4xl md:text-6xl font-bold text-emerald-600 mb-10 lg:mb-6"
           >
             {titles[index]}
           </motion.h1>

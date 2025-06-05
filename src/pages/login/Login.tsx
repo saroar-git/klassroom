@@ -1,16 +1,42 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "./login.css"; // required custom CSS for flip
+import "./login.css";
+import RegistrationForm from "./RegistrationForm";
+import LoginForm from "./LoginForm";
+import clsx from "clsx";
+
+const typingContainer = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.07,
+    },
+  },
+};
+
+const typingChar = {
+  hidden: { opacity: 0, y: `0.25em` },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "easeOut",
+    },
+  },
+};
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const toggleMode = () => setIsLogin((prev) => !prev);
 
   return (
-    <div className="min-h-[calc(100vh-62px)] flex items-center justify-center bg-gray-100 px-4">
+    <div className="lg:min-h-[calc(100vh-63px)] flex flex-col items-center py-12 lg:py-16 bg-gray-100 px-3">
       <div
-        className="perspective w-full max-w-md relative"
-        style={{ height: isLogin ? "380px" : "530px" }}
+        className={clsx(
+          "perspective w-full max-w-md relative",
+          isLogin ? "h-[380px]" : "h-[820px] md:h-[540px]"
+        )}
       >
         <motion.div
           className="flip-card-inner w-full h-full relative"
@@ -43,62 +69,29 @@ const AuthForm = ({
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 w-full h-full">
-      <h2 className="text-3xl font-bold text-center text-emerald-700 mb-6">
-        {isLogin ? "Login to Your Account" : "Create a New Account"}
-      </h2>
+      <motion.h1
+        className="text-3xl font-bold text-center text-[#EE4B84] mb-6 flex flex-wrap justify-center"
+        variants={typingContainer}
+        initial="hidden"
+        animate="visible"
+      >
+        {(isLogin ? "Login to Your Account" : "Create a New Account")
+          .split("")
+          .map((char, index) => (
+            <motion.span key={index} variants={typingChar}>
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+      </motion.h1>
 
       <form className="space-y-4">
-        {!isLogin && (
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Full Name
-            </label>
-            <input
-              type="text"
-              placeholder="John Doe"
-              className="mt-1 w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            />
-          </div>
-        )}
+        {!isLogin && <RegistrationForm />}
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <input
-            type="email"
-            placeholder="you@example.com"
-            className="mt-1 w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <input
-            type="password"
-            placeholder="••••••••"
-            className="mt-1 w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-          />
-        </div>
-
-        {!isLogin && (
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Confirm Password
-            </label>
-            <input
-              type="password"
-              placeholder="••••••••"
-              className="mt-1 w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            />
-          </div>
-        )}
+        {isLogin && <LoginForm />}
 
         <button
           type="submit"
-          className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition duration-200 cursor-pointer mt-2"
+          className="w-full bg-[#EE4B84] hover:bg-[#EE4B84] text-white font-semibold py-2 rounded-lg transition duration-200 cursor-pointer mt-2"
         >
           {isLogin ? "Login" : "Register"}
         </button>
@@ -108,7 +101,7 @@ const AuthForm = ({
         {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
         <button
           onClick={toggleMode}
-          className="text-emerald-700 font-medium hover:underline ml-1 cursor-pointer"
+          className="text-[#EE4B84] font-medium hover:underline ml-1 cursor-pointer"
         >
           {isLogin ? "Register" : "Login"}
         </button>

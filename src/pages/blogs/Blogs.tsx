@@ -49,7 +49,7 @@ const title = "Latest Blog Posts";
 
 const Blogs = () => {
   return (
-    <Container className="my-16 px-3">
+    <Container className="lg:my-16 my-12 px-3">
       <div className="text-center">
         <motion.h1
           className="text-4xl font-bold text-emerald-700 poppins inline-block"
