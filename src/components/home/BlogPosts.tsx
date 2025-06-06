@@ -32,7 +32,7 @@ export default function BlogPosts() {
   return (
     <section id="blog" className="my-20 lg:my-28 px-3">
       <div className="max-w-6xl mx-auto text-center">
-        <Titles title="Latest Resources & Blogs" />
+        <Titles title="Resources & Blogs" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
           {blogPosts.map((post, i) => (

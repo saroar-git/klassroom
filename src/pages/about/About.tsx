@@ -23,7 +23,7 @@ export default function About() {
               viewport={{ once: true }}
               className="col-span-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
+              <h2 className="text-2xl md:text-4xl font-bold text-emerald-700 mb-4">
                 Our Mission
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed text-justify">
@@ -43,7 +43,7 @@ export default function About() {
               viewport={{ once: true }}
               className="col-span-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
+              <h2 className="text-2xl md:text-4xl font-bold text-emerald-700 mb-4">
                 Our Vision
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed text-justify">
@@ -65,7 +65,7 @@ export default function About() {
             className="mt-8 items-center"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
+              <h2 className="text-2xl md:text-4xl font-bold text-emerald-700 mb-4">
                 The Journey Behind Klassroom
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">

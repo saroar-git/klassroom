@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
   return (
     <section id="why-us" className="my-20 lg:my-28 bg-white px-3">
       <div className="max-w-6xl mx-auto text-center">
-        <Titles title="Why Choose Klassroom?" />
+        <Titles title="Why Choose Us?" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((item, i) => (

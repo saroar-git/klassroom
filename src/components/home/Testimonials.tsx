@@ -32,7 +32,7 @@ export default function Testimonials() {
       className="my-20 lg:my-28 bg-yellow-50 px-3 py-12"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <Titles title="What Our Students Say" />
+        <Titles title="Learner Reflections" />
 
         <Carousel
           autoPlay
