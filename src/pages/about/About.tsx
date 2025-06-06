@@ -68,7 +68,7 @@ export default function About() {
               <h2 className="text-2xl md:text-4xl font-bold text-emerald-700 mb-4">
                 The Journey Behind Klassroom
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
                 Klassroom started as a passion project to bring modern,
                 human-centered education to Bangladesh and beyond. After facing
                 the challenges of conventional learning systems, our founder
