@@ -1,11 +1,37 @@
 import { motion } from "framer-motion";
 import Container from "../../components/ui/Container";
-import Titles from "../../components/utils/Titles";
+import {
+  typingChar,
+  typingContainer,
+  underlineAnimation,
+} from "../../components/ui/Animation";
+
+const title = "Our Journey So Far";
 
 const Timeline = () => {
   return (
     <Container className="w-full mx-auto">
-      <Titles title="Our Journey So Far" />
+      <motion.h2
+        variants={typingContainer}
+        initial="hidden"
+        animate="visible"
+        className="text-3xl md:text-4xl font-bold text-center text-yellow-700 mb-12"
+      >
+        {title.split("").map((char, index) => (
+          <motion.span key={index} variants={typingChar}>
+            {char === " " ? "\u00A0" : char}
+          </motion.span>
+        ))}
+
+        <motion.div
+          className="h-1 bg-yellow-600 rounded-full mt-2 mx-auto"
+          style={{ maxWidth: "200px" }}
+          variants={underlineAnimation}
+          initial="hidden"
+          animate="visible"
+        />
+      </motion.h2>
+
       <motion.ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-16">
         {[
           {
@@ -44,7 +70,7 @@ const Timeline = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="h-5 w-5 text-emerald-600"
+                className="h-5 w-5 text-yellow-600"
               >
                 <path
                   fillRule="evenodd"

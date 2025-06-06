@@ -7,7 +7,7 @@ import Timeline from "./Timeline";
 export default function About() {
   return (
     <>
-      <section className="relative bg-yellow-50 lg:py-16 py-12 px-3">
+      <section className="relative bg-emerald-50 lg:py-16 py-12 px-3">
         <Container className="text-center">
           <Titles
             title="About Klassroom"
@@ -23,7 +23,7 @@ export default function About() {
               viewport={{ once: true }}
               className="col-span-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-yellow-700 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
                 Our Mission
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed text-justify">
@@ -43,7 +43,7 @@ export default function About() {
               viewport={{ once: true }}
               className="col-span-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-yellow-700 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
                 Our Vision
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed text-justify">
@@ -65,7 +65,7 @@ export default function About() {
             className="mt-8 items-center"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-yellow-700 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">
                 The Journey Behind Klassroom
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -87,7 +87,7 @@ export default function About() {
       </section>
 
       {/* Timeline */}
-      <section className="relative bg-emerald-50 lg:py-16 py-12 px-3">
+      <section className="relative bg-yellow-50 lg:py-16 py-12 px-3">
         <Timeline />
       </section>
     </>
