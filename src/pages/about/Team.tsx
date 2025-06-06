@@ -15,17 +15,18 @@ const team = [
     linkedin: "https://www.linkedin.com/in/fuadpablo",
   },
   {
-    name: "Ayesha Khan",
-    role: "Curriculum Designer",
-    // image: team2,
-    linkedin: "#",
-  },
-  {
     name: "Saroar Jahan",
-    role: "IT Leader",
+    role: "IT & Digital Support",
     image:
       "https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/481822607_122141300468521269_7108119095072123501_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=SuxNI4JRXy0Q7kNvwGba8WQ&_nc_oc=Admtuwjd3uzT0-aPgmLyQ2wHkIfz0hmMw4ghBVsbyedpQpsZL_-MBFSToQpZqWitVdg&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=i0b1BmmXIic0cA5SGLw2tA&oh=00_AfMJVmf3CAxd6iyDxlgOxD17npwRFIV2XQrKhOx5-6nBEg&oe=68484A95",
     linkedin: "https://linkedin.com/in/saroar-in",
+  },
+  {
+    name: "Tahsan Ahmmed",
+    role: "Student Support",
+    image:
+      "https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/467349559_907941767955891_7654292706525900984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nTsKcPXR5FoQ7kNvwH48qU_&_nc_oc=AdnTi4fBme2JPgZOpzNiwOXfALE6vdVGPDD5V52jfmY0xXOtOtD7fucqbzDOMmwX9ak&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=Ck2DiEE032tR2mVc32b1jQ&oh=00_AfOKpAxUEbkTj5Q25OoMP3JPEB_feDDYelhHkNjHwsiDIQ&oe=68484125",
+    linkedin: "https://www.linkedin.com/in/tahsanahmmed24/",
   },
 ];
 const title = "Meet the Team";
