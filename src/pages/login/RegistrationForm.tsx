@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -47,6 +48,7 @@ const RegistrationForm = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
+      toast.success("Welcome to Klassroom");
       console.log("Registration Data:", formData);
 
       // Reset form state

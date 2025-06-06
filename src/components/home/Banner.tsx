@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="lg:min-h-[85vh] min-h-[55vh] flex items-center justify-center bg-gradient-to-br from-white via-emerald-50 to-emerald-100 text-center px-4">
+    <section className="lg:min-h-[90vh] min-h-[55vh] flex items-center justify-center bg-gradient-to-br from-white via-emerald-50 to-emerald-100 text-center px-4">
       <div className="max-w-3xl">
         <AnimatePresence mode="wait">
           <motion.h1

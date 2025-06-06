@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -27,6 +28,7 @@ const LoginForm = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
+      toast.success("Welcome Back");
       console.log("Form submitted:", { email, password });
       // Proceed with login logic here (API call, etc.)
     }
