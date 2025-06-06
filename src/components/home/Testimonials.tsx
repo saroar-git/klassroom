@@ -27,7 +27,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="my-20 lg:my-28 bg-pink-50 px-3 py-12">
+    <section
+      id="testimonials"
+      className="my-20 lg:my-28 bg-yellow-50 px-3 py-12"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <Titles title="What Our Students Say" />
 
@@ -45,16 +48,16 @@ export default function Testimonials() {
               initial="initial"
               whileInView="whileInView"
               viewport={{ once: true }}
-              className="card bg-white shadow-lg border border-pink-100 px-6 py-8 mx-4"
+              className="card bg-white shadow-lg border border-yellow-100 px-6 py-8 mx-4"
             >
               <div className="flex flex-col items-center">
                 <img
                   src={t.avatar}
-                  className="max-w-28 rounded-full mb-4 border-4 border-pink-100"
+                  className="max-w-28 rounded-full mb-4 border-4 border-yellow-100"
                   alt={t.name}
                 />
                 <p className="text-gray-700 text-lg mb-4 italic">"{t.quote}"</p>
-                <h4 className="text-pink-700 font-semibold mb-4">{t.name}</h4>
+                <h4 className="text-yellow-700 font-semibold mb-4">{t.name}</h4>
               </div>
             </motion.div>
           ))}

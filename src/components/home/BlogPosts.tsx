@@ -30,7 +30,7 @@ const blogPosts = [
 
 export default function BlogPosts() {
   return (
-    <section id="blog" className="my-20 lg:my-28 px-3 bg-emerald-50 py-12">
+    <section id="blog" className="my-20 lg:my-28 px-3">
       <div className="max-w-6xl mx-auto text-center">
         <Titles title="Latest Resources & Blogs" />
 
@@ -42,12 +42,12 @@ export default function BlogPosts() {
               initial="initial"
               whileInView="whileInView"
               viewport={{ once: true }}
-              className="bg-emerald-50 border border-emerald-100 rounded-xl shadow p-6 text-left hover:scale-105 transition duration-300"
+              className="bg-pink-50 border border-pink-100 rounded-xl shadow p-6 text-left hover:scale-105 transition duration-300"
             >
-              <span className="text-sm text-emerald-700 font-semibold uppercase tracking-wide mb-2 inline-block">
+              <span className="text-sm text-pink-700 font-semibold uppercase tracking-wide mb-2 inline-block">
                 #{post.tag}
               </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2">
+              <h3 className="text-lg font-semibold text-pink-800 mb-2">
                 {post.title}
               </h3>
               <p className="text-gray-600 text-sm mb-4">{post.summary}</p>

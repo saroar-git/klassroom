@@ -29,7 +29,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="my-20 lg:my-28 px-3 lg:px-12  bg-yellow-50 py-12"
+      className="my-20 lg:my-28 px-3 lg:px-12  bg-emerald-50 py-12"
     >
       <>
         <Titles title="FAQs" subTitle="Got questions? We’ve got answers!" />

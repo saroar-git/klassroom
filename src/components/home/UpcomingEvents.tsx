@@ -28,7 +28,7 @@ const events = [
 
 export default function UpcomingEvents() {
   return (
-    <section id="events" className="my-20 lg:my-28 px-3">
+    <section id="events" className="my-20 lg:my-28 px-3 bg-pink-50 py-12">
       <Titles
         title="Upcoming Events"
         subTitle="Join our live workshops and sessions to accelerate your growth."

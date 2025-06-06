@@ -18,10 +18,10 @@ const Home = () => {
         <AboutUs />
         <OfferCourse />
         <WhyChooseUs />
-        <Testimonials />
-        <Instructors />
-        <BlogPosts />
         <UpcomingEvents />
+        <Instructors />
+        <Testimonials />
+        <BlogPosts />
         <FaqSection />
         <JoinUs />
       </Container>
