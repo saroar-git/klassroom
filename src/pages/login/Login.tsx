@@ -31,7 +31,7 @@ const Login = () => {
   const toggleMode = () => setIsLogin((prev) => !prev);
 
   return (
-    <div className="lg:min-h-[calc(100vh-63px)] flex flex-col items-center py-12 lg:py-16 bg-gray-100 px-3">
+    <div className="lg:min-h-[calc(100vh-63px)] min-h-[90vh] flex flex-col items-center py-12 lg:py-16 bg-gray-100 px-3">
       <div
         className={clsx(
           "perspective w-full max-w-md relative",
@@ -75,7 +75,7 @@ const AuthForm = ({
         initial="hidden"
         animate="visible"
       >
-        {(isLogin ? "Login to Your Account" : "Create a New Account")
+        {(isLogin ? "Login to Learn" : "Create an Account")
           .split("")
           .map((char, index) => (
             <motion.span key={index} variants={typingChar}>
@@ -84,18 +84,11 @@ const AuthForm = ({
           ))}
       </motion.h1>
 
-      <form className="space-y-4">
+      <div className="space-y-4">
         {!isLogin && <RegistrationForm />}
 
         {isLogin && <LoginForm />}
-
-        <button
-          type="submit"
-          className="w-full bg-[#EE4B84] hover:bg-[#EE4B84] text-white font-semibold py-2 rounded-lg transition duration-200 cursor-pointer mt-2"
-        >
-          {isLogin ? "Login" : "Register"}
-        </button>
-      </form>
+      </div>
 
       <p className="text-center text-sm text-gray-600 mt-6">
         {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
