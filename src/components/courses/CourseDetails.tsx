@@ -62,12 +62,12 @@ const CourseDetails = () => {
         <img
           src={course.thumbnail}
           alt={course.title}
-          className="w-full h-[400px] object-cover rounded-t-xl mb-6"
+          className="w-full lg:h-[400px] object-cover rounded-t-xl mb-6"
         />
 
-        <div className="p-10 space-y-6">
+        <div className="lg:p-10 p-4 space-y-6">
           {/* Title & Meta */}
-          <h1 className="text-3xl font-bold text-emerald-800 mb-4">
+          <h1 className="text-2xl lg:text-3xl font-bold text-emerald-800 mb-4">
             {course.title}
           </h1>
 
@@ -115,7 +115,7 @@ const CourseDetails = () => {
 
           {/* Curriculum */}
           <Titles title="Curriculum" textSize="text-2xl lg:text-3xl" />
-          <ul className="list-decimal list-inside text-gray-800 space-y-2 mb-10 mt-3 leading-relaxed">
+          <ul className="list-decimal list-inside text-gray-800 space-y-4 lg:space-y-3 mb-10 mt-3 leading-relaxed">
             {course.curriculum.map((item, i) => (
               <motion.li
                 key={i}
@@ -132,7 +132,7 @@ const CourseDetails = () => {
           </ul>
 
           {/* Checkout Section */}
-          <div className="border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="border-t pt-6 flex flex-col md:flex-row justify-center lg:justify-between items-center gap-6">
             <div>
               <p className="text-red-500 line-through">৳{course.price}</p>
               <p className="text-2xl font-semibold text-green-600">

@@ -20,7 +20,7 @@ const OfferCourse = () => {
     <section id="courses" className="my-20 lg:my-28 bg-yellow-50 px-3 py-12">
       <Titles title="Courses We Offer" />
 
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         {courses.map((course) => (
           <motion.div
             key={course.id}

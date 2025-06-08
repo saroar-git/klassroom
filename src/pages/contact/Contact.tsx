@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../../components/ui/Animation";
-import { Mail, MapPin, Phone, Facebook, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Titles from "../../components/utils/Titles";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -105,22 +106,22 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-6 mt-4">
+            <div className="flex gap-4 mt-4">
               <Link
                 to="https://www.facebook.com/profile.php?id=61576946549117"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-[#0866FF] rounded-full text-white"
+                className="text-[#0866FF] rounded-full"
               >
-                <Facebook className="w-5 h-5 transition" />
+                <FaFacebook className="w-9 h-9 transition" />
               </Link>
               <Link
                 to="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-[#006FAC] rounded-full text-white"
+                className="text-[#006FAC] rounded-full"
               >
-                <Linkedin className="w-5 h-5 transition" />
+                <FaLinkedin className="w-9 h-9 transition" />
               </Link>
             </div>
 

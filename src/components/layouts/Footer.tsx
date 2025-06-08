@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import logo from "../../assets/logo.png";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -105,17 +106,15 @@ export default function Footer() {
             to="https://www.facebook.com/profile.php?id=61576946549117"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-[#0866FF] rounded-full text-white"
           >
-            <Facebook className="w-5 h-5 transition" />
+            <FaFacebook className="w-9 h-9 transition text-white" />
           </Link>
           <Link
             to="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-[#006FAC] rounded-full text-white"
           >
-            <Linkedin className="w-5 h-5 transition" />
+            <FaLinkedin className="w-9 h-9 transition text-white" />
           </Link>
         </div>
 
