@@ -73,24 +73,24 @@ const CourseDetails = () => {
           </h1>
 
           <div className="flex flex-wrap gap-4 text-sm text-gray-700 mb-20">
-            <span className="flex items-center gap-2">
-              <FaUsersRectangle className="w-4 h-4" />
+            <span className="flex items-start lg:items-center gap-2">
+              <FaUsersRectangle className="w-5 h-5 text-yellow-600" />
               <strong>{course.batch}</strong>
             </span>
-            <span className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
+            <span className="flex items-start lg:items-center gap-2">
+              <Calendar className="w-5 h-5 text-yellow-600" />
               {daysLeft > 0 ? `${daysLeft} days left` : "Starting soon"}
             </span>
-            <span className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
+            <span className="flex items-start lg:items-center gap-2">
+              <Clock className="w-5 h-5 text-yellow-600" />
               Duration: {course.duration}
             </span>
-            <span className="flex items-center gap-2">
-              <Users className="w-4 h-4" />
+            <span className="flex items-start lg:items-center gap-2">
+              <Users className="w-5 h-5 text-yellow-600" />
               {course.students}+ students
             </span>
-            <span className="flex items-center gap-2">
-              <Star className="w-4 h-4 text-yellow-600" />
+            <span className="flex items-start lg:items-center gap-2">
+              <Star className="w-5 h-5 text-yellow-600" />
               {course.rating}
             </span>
           </div>

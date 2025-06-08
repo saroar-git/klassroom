@@ -40,15 +40,15 @@ const OfferCourse = () => {
 
             <div className="px-6 mb-5">
               <div className="flex justify-center items-center gap-2 text-sm text-gray-700 mb-4">
-                <p className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                <p className="flex items-start lg:items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
                   <FaUsersRectangle className="w-4 h-4 text-yellow-600" />{" "}
                   {course.batch}
                 </p>
-                <div className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                <div className="flex items-start lg:items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
                   <Users className="w-4 h-4 text-yellow-600" />
                   <span>{course.seatsLeft} seats left</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                <div className="flex items-start lg:items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
                   <Calendar className="w-4 h-4 text-yellow-600" />
                   <span>{getDaysLeft(course.startDate)}</span>
                 </div>
