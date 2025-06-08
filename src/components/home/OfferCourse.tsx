@@ -5,6 +5,7 @@ import Button from "../utils/Button";
 import Titles from "../utils/Titles";
 import courses from "../../data/courses.json";
 import { Link } from "react-router-dom";
+import { FaUsersRectangle } from "react-icons/fa6";
 
 const getDaysLeft = (startDate: string) => {
   const today = new Date();
@@ -39,7 +40,8 @@ const OfferCourse = () => {
 
             <div className="px-6 mb-5">
               <div className="flex justify-center items-center gap-2 text-sm text-gray-700 mb-4">
-                <p className="text-sm bg-gray-300 px-4 py-1.5 -t-2xl rounded">
+                <p className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                  <FaUsersRectangle className="w-4 h-4 text-yellow-600" />{" "}
                   {course.batch}
                 </p>
                 <div className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">

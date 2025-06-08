@@ -1,11 +1,12 @@
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Calendar, Clock, List, Star, Users, BookOpen } from "lucide-react";
+import { Calendar, Clock, List, Star, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import courses from "../../data/courses.json";
 import Button from "../utils/Button";
 import Titles from "../utils/Titles";
 import { fadeUp } from "../ui/Animation";
+import { FaUsersRectangle } from "react-icons/fa6";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -73,15 +74,15 @@ const CourseDetails = () => {
 
           <div className="flex flex-wrap gap-4 text-sm text-gray-700 mb-20">
             <span className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
+              <FaUsersRectangle className="w-4 h-4" />
               <strong>{course.batch}</strong>
             </span>
             <span className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
+              <Calendar className="w-4 h-4" />
               {daysLeft > 0 ? `${daysLeft} days left` : "Starting soon"}
             </span>
             <span className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4" />
+              <Clock className="w-4 h-4" />
               Duration: {course.duration}
             </span>
             <span className="flex items-center gap-2">
