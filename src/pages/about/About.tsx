@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import Container from "../../components/ui/Container";
 import Titles from "../../components/utils/Titles";
-import Team from "./Team";
-import Timeline from "./Timeline";
+import Team from "../../components/about/Team";
+import Timeline from "../../components/about/Timeline";
 
 export default function About() {
   return (
     <>
-      <section className="relative bg-emerald-50 lg:py-16 py-12 px-3">
+      <section className="relative bg-yellow-50 lg:py-16 py-12 px-3">
         <Container className="text-center">
           <Titles
             title="About Klassroom"
@@ -62,7 +62,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             viewport={{ once: true }}
-            className="mt-8 items-center"
+            className="mt-16 items-center"
           >
             <div>
               <h2 className="text-2xl md:text-4xl font-bold text-emerald-700 mb-4">

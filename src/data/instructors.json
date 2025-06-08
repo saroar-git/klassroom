@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Mithun Dey",
+    "title": "SPSS & Data Analytics Instructor",
+    "image": "https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/502609000_2543600545999834_4083842778528530199_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=9VF1ysLZY8MQ7kNvwHz0Om1&_nc_oc=AdmZZpmVFBnN9y9hDwN-wYLpmby_1YqUTz_osfy-fJV14wAzrzgiHptMbwqDhsVsRUM&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nsLr-pAVp4zzOM5BJsTe-A&oh=00_AfPrnRCxW8Q4TYQlB-oS_SDNKi3OIBYiNcfFszR4KRyxEg&oe=68482D30",
+    "linkedin": "https://www.linkedin.com/in/mithun-547s/",
+    "department": "Department of Statistics",
+    "institute": "University of Rajshahi"
+  },
+  {
+    "name": "Dr. Faisal Islam",
+    "title": "IELTS & Soft Skills Expert",
+    "image": "https://i.pravatar.cc/150?img=12",
+    "linkedin": "https://linkedin.com/in/example",
+    "department": "Department of English",
+    "institute": "University of Dhaka"
+  },
+  {
+    "name": "Shamima Akter",
+    "title": "Career Coach & Public Speaker",
+    "image": "https://i.pravatar.cc/150?img=21",
+    "linkedin": "https://linkedin.com/in/example3",
+    "department": "Institute of Business Administration",
+    "institute": "University of Dhaka"
+  }
+]

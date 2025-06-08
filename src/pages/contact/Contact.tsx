@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className="lg:py-16 py-12 px-3 bg-emerald-50">
+    <section className="lg:py-16 py-12 px-3 bg-pink-50">
       <div className="max-w-6xl mx-auto">
         <Titles title="Get in Touch" />
 

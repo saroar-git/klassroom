@@ -14,14 +14,14 @@ const events = [
     title: "SPSS for Beginners",
     date: "June 20, 2025",
     time: "3:00 PM – 5:00 PM",
-    location: "Zoom",
+    location: "Online",
     desc: "Learn how to analyze data using SPSS – no experience needed!",
   },
   {
     title: "Soft Skills Workshop",
     date: "June 25, 2025",
     time: "4:00 PM – 6:00 PM",
-    location: "Google Meet",
+    location: "Online",
     desc: "Master communication and teamwork for career advancement.",
   },
 ];

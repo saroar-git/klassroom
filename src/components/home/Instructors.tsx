@@ -1,30 +1,9 @@
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
 import { cardAnimation } from "../ui/Animation";
-import Titles from "../utils/Titles";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-const instructors = [
-  {
-    name: "Mithun Dey",
-    title: "SPSS & Data Analytics Instructor",
-    image:
-      "https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/502609000_2543600545999834_4083842778528530199_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=9VF1ysLZY8MQ7kNvwHz0Om1&_nc_oc=AdmZZpmVFBnN9y9hDwN-wYLpmby_1YqUTz_osfy-fJV14wAzrzgiHptMbwqDhsVsRUM&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nsLr-pAVp4zzOM5BJsTe-A&oh=00_AfPrnRCxW8Q4TYQlB-oS_SDNKi3OIBYiNcfFszR4KRyxEg&oe=68482D30",
-    linkedin: "https://www.linkedin.com/in/mithun-547s/",
-  },
-  {
-    name: "Dr. Faisal Islam",
-    title: "IELTS & Soft Skills Expert",
-    image: "https://i.pravatar.cc/150?img=12",
-    linkedin: "https://linkedin.com/in/example",
-  },
-  {
-    name: "Shamima Akter",
-    title: "Career Coach & Public Speaker",
-    image: "https://i.pravatar.cc/150?img=21",
-    linkedin: "https://linkedin.com/in/example3",
-  },
-];
+import Titles from "../utils/Titles";
+import instructors from "../../data/instructors.json";
 
 export default function Instructors() {
   return (
@@ -52,7 +31,7 @@ export default function Instructors() {
               </h3>
               <p className="text-gray-600 mb-3">{inst.title}</p>
               <a href={inst.linkedin} target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-7 h-7 border rounded p-1 mx-auto bg-[#006FAC] text-white" />
+                <FaLinkedin className="w-7 h-7 mx-auto text-[#006FAC]" />
               </a>
             </motion.div>
           ))}

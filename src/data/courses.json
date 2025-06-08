@@ -1,0 +1,65 @@
+[
+  {
+    "id": "spss",
+    "title": "Mastering SPSS for Research Analysis",
+    "thumbnail": "https://www.mytectra.com/hubfs/mytectra%20blog/Mastering-SPSS-A-Comprehensive-Guide-for-Data-Analysis.jpg",
+    "batch": "Batch 3",
+    "seatsLeft": 30,
+    "startDate": "2025-06-10",
+    "price": 2999,
+    "discountPrice": 1999,
+    "rating": 4.7,
+    "students": 120,
+    "duration": "1 Month",
+    "features": [
+      "Online live classes",
+      "Research Focused",
+      "SPSS Files & Practice Sets"
+    ],
+    "curriculum": [
+      "Week 1, Class 1: Introduction to SPSS – Interface, usage, real-world applications",
+      "Week 1, Class 2: Population vs Sample – Core statistical foundations for data analysis",
+      "Week 1, Class 3: Types of Variables – Qualitative, Quantitative, Discrete, Continuous",
+
+      "Week 2, Class 4: Descriptive Statistics – Mean, Median, Mode, Range, Standard Deviation",
+      "Week 2, Class 5: Inferential Statistics – Hypothesis testing, confidence intervals, p-values",
+      "Week 2, Class 6: Graphs & Charts – Histograms, bar charts, boxplots using SPSS",
+
+      "Week 3, Class 7: Correlation Analysis – Pearson, Spearman, interpreting output",
+      "Week 3, Class 8: Regression – Simple & Multiple linear regression in SPSS",
+      "Week 3, Class 9: Levels of Measurement – Nominal, Ordinal, Interval, Ratio scales",
+
+      "Week 4, Class 10: Parameters vs Statistics – Mean, Std. Dev., Proportions (Population vs Sample)",
+      "Week 4, Class 11: Data Editor Window – Data View vs Variable View, setting properties, coding",
+      "Week 4, Class 12: Hands-On Practice – Importing data, cleaning, saving `.sav` file, final Q&A"
+    ]
+  },
+  {
+    "id": "ielts",
+    "title": "IELTS Crash Course for 7+ Band",
+    "thumbnail": "https://cdn.leverageedu.com/blog/wp-content/uploads/2020/04/22220146/IELTS-Sample-Test.png",
+    "batch": "Batch 1",
+    "seatsLeft": 20,
+    "startDate": "2025-08-25",
+    "price": 3999,
+    "discountPrice": 2799,
+    "rating": 4.9,
+    "students": 250,
+    "duration": "3 Months",
+    "features": ["Band 7+ Strategies", "Mock Tests", "Speaking Practice"],
+    "curriculum": [
+      "Week 1: Course Orientation – IELTS exam overview, scoring, band goals, personalized study plan",
+      "Week 2: Listening Strategies – Sections 1–4, accent exposure (UK, AUS, US), tips for note-taking",
+      "Week 3: Listening Practice – Practice tests with answer analysis, listening for keywords & tone",
+      "Week 4: Reading Techniques – Skimming, scanning, identifying keywords, passage structure",
+      "Week 5: Reading Practice – Time management, True/False/Not Given, matching headings, gap-fills",
+      "Week 6: Writing Task 1 – Data description (Academic) / Letter writing (General), structure, grammar",
+      "Week 7: Writing Task 2 – Essay types (opinion, discussion, advantage/disadvantage), argument structure",
+      "Week 8: Writing Practice – Coherence & cohesion, improving lexical resource, self-editing practice",
+      "Week 9: Speaking Part 1 – Personal Q&A, fluency building, avoiding fillers, vocabulary for daily topics",
+      "Week 10: Speaking Parts 2 & 3 – Cue card planning, extending answers, handling abstract topics",
+      "Week 11: Mock Tests – 2 full practice tests with feedback, error analysis, time pressure simulation",
+      "Week 12: Final Review – Band 7+ techniques, common mistakes, confidence tips, exam-day preparation"
+    ]
+  }
+]

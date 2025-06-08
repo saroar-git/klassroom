@@ -1,69 +1,72 @@
 import { motion } from "framer-motion";
-import { TvMinimalPlay } from "lucide-react";
+import { Users, Calendar, TvMinimalPlay } from "lucide-react";
 import { cardAnimation } from "../ui/Animation";
 import Button from "../utils/Button";
 import Titles from "../utils/Titles";
+import courses from "../../data/courses.json";
+import { Link } from "react-router-dom";
 
-const courses = [
-  {
-    name: "SPSS for Beginners",
-    duration: "6 Weeks",
-    level: "Beginner",
-    price: "৳3000",
-    description:
-      "Learn statistical analysis using SPSS with hands-on practice.",
-  },
-  {
-    name: "IELTS Preparation",
-    duration: "8 Weeks",
-    level: "Intermediate",
-    price: "৳5000",
-    description:
-      "Boost your IELTS score with expert strategies and mock tests.",
-  },
-  {
-    name: "CV & Interview Masterclass",
-    duration: "2 Weeks",
-    level: "Beginner",
-    price: "৳1500",
-    description:
-      "Craft standout CVs and prepare for job interviews confidently.",
-  },
-];
+const getDaysLeft = (startDate: string) => {
+  const today = new Date();
+  const start = new Date(startDate);
+  const diff = Math.ceil(
+    (start.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)
+  );
+  return diff > 0 ? `${diff} days left` : "Starting soon";
+};
 
 const OfferCourse = () => {
   return (
     <section id="courses" className="my-20 lg:my-28 bg-yellow-50 px-3 py-12">
       <Titles title="Courses We Offer" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {courses.map((course, index) => (
+      <div className="flex items-center justify-center gap-8">
+        {courses.map((course) => (
           <motion.div
-            key={index}
+            key={course.id}
             variants={cardAnimation}
             initial="initial"
             whileInView="whileInView"
             transition={cardAnimation.transition}
             viewport={{ once: true }}
-            className="bg-white rounded-xl shadow-md p-6 text-left border border-green-100 hover:shadow-lg transition"
+            className="bg-white rounded-2xl shadow-md pb-5 w-full max-w-md border border-yellow-200 hover:shadow-lg transition-all text-center hover:scale-105 transform duration-300"
           >
-            <h3 className="text-xl font-semibold text-yellow-700 mb-2">
-              {course.name}
-            </h3>
-            <p className="text-gray-600 mb-2">{course.description}</p>
-            <div className="text-sm text-gray-500 my-3">
-              ⏱ {course.duration} &nbsp;|&nbsp; 🎯 {course.level} &nbsp;|&nbsp;
-              💳 {course.price}
+            <img
+              src={course.thumbnail}
+              alt={course.title}
+              className="w-full h-50 object-cover mb-2 rounded-t-2xl"
+            />
+
+            <div className="px-6 mb-5">
+              <div className="flex justify-center items-center gap-2 text-sm text-gray-700 mb-4">
+                <p className="text-sm bg-gray-300 px-4 py-1.5 -t-2xl rounded">
+                  {course.batch}
+                </p>
+                <div className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                  <Users className="w-4 h-4 text-yellow-600" />
+                  <span>{course.seatsLeft} seats left</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm bg-gray-300 px-4 py-1.5 rounded">
+                  <Calendar className="w-4 h-4 text-yellow-600" />
+                  <span>{getDaysLeft(course.startDate)}</span>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold text-yellow-800 mb-1">
+                {course.title}
+              </h3>
             </div>
-            <div className="w-full flex items-end justify-end mt-8">
-              <button className="btn btn-sm bg-yellow-600 text-white hover:bg-yellow-700">
-                Enroll Now
-              </button>
-            </div>
+            <Link
+              to={`/course/${course.id}`}
+              className="text-sm text-yellow-700 hover:text-yellow-800 hover:link"
+            >
+              See Details
+            </Link>
           </motion.div>
         ))}
       </div>
-      <div className="w-full flex text-center items-center justify-center mt-16">
+
+      <div className="flex justify-center mt-12">
         <Button
           to="/courses"
           text="See More Courses"

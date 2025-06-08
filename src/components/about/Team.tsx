@@ -3,8 +3,8 @@ import {
   typingChar,
   typingContainer,
   underlineAnimation,
-} from "../../components/ui/Animation";
-import Container from "../../components/ui/Container";
+} from "../ui/Animation";
+import Container from "../ui/Container";
 
 const team = [
   {

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import "./login.css";
-import RegistrationForm from "./RegistrationForm";
-import LoginForm from "./LoginForm";
+import RegistrationForm from "../../components/login/RegistrationForm";
+import LoginForm from "../../components/login/LoginForm";
 import clsx from "clsx";
 
 const typingContainer = {

@@ -10,6 +10,8 @@ import SoftSkills from "../components/blogs/SoftSkills";
 import SPSS from "../components/blogs/SPSS";
 import IELTS from "../components/blogs/IELTS";
 import EducationTech from "../components/blogs/EducationTech";
+import CourseDetails from "../components/courses/CourseDetails";
+import Instructors from "../pages/instructors/Instructors";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +27,8 @@ export const router = createBrowserRouter([
       { path: "blog/education-innovation", element: <EducationTech /> },
       { path: "contact", element: <Contact /> },
       { path: "courses", element: <Courses /> },
+      { path: "course/:courseId", element: <CourseDetails /> },
+      { path: "instructors", element: <Instructors /> },
       { path: "login", element: <Login /> },
     ],
   },

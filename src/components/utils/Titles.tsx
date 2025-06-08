@@ -5,11 +5,21 @@ import {
   underlineAnimation,
 } from "../ui/Animation";
 
-const Titles = ({ title, subTitle }: { title: string; subTitle?: string }) => {
+const Titles = ({
+  title,
+  subTitle,
+  className = "",
+  textSize = "text-3xl lg:text-4xl",
+}: {
+  title: string;
+  subTitle?: string;
+  className?: string;
+  textSize?: string;
+}) => {
   return (
-    <div className="text-center mb-14">
+    <div className={`text-center mb-14 ${className}`}>
       <motion.h1
-        className="text-3xl lg:text-4xl font-bold text-emerald-700 poppins text-wrap"
+        className={`${textSize} font-bold text-emerald-700 poppins text-wrap`}
         variants={typingContainer}
         initial="hidden"
         animate="visible"
@@ -29,15 +39,17 @@ const Titles = ({ title, subTitle }: { title: string; subTitle?: string }) => {
         animate="visible"
       />
 
-      <motion.p
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 2 }}
-        viewport={{ once: true }}
-        className="text-gray-600 mt-5"
-      >
-        {subTitle}
-      </motion.p>
+      {subTitle && (
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 2 }}
+          viewport={{ once: true }}
+          className="text-gray-600 mt-5"
+        >
+          {subTitle}
+        </motion.p>
+      )}
     </div>
   );
 };
