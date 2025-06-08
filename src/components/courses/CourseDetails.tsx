@@ -72,7 +72,7 @@ const CourseDetails = () => {
             {course.title}
           </h1>
 
-          <div className="flex flex-wrap gap-4 text-sm text-gray-700 mb-20">
+          <div className="flex flex-col lg:flex-row flex-wrap gap-4 text-sm text-gray-700 mb-10 lg:mb-20">
             <span className="flex items-start lg:items-center gap-2">
               <FaUsersRectangle className="w-5 h-5 text-yellow-600" />
               <strong>{course.batch}</strong>
@@ -97,7 +97,7 @@ const CourseDetails = () => {
 
           {/* Features */}
           <Titles title="Key Features" textSize="text-2xl lg:text-3xl" />
-          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-8 mt-3">
+          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-14 lg:mb-20">
             {course.features.map((f, i) => (
               <motion.li
                 key={i}
