@@ -33,7 +33,7 @@ const Instructors = () => {
               className="w-full hover:scale-105 transform transition-all duration-300"
             >
               <div className="card shadow-lg bg-base-100 hover:shadow-xl transition-all">
-                <figure className="w-full h-full object-contain rounded-full flex items-center justify-center">
+                <figure className="w-full h-full object-contain rounded-full flex items-center justify-center mt-5">
                   <img
                     src={instructor.image}
                     alt={instructor.name}
